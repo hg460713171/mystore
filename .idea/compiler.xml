@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bookstore-servicemesh-library-testing" />
+        <module name="bookstore-servicemesh-domain-frontend" />
+        <module name="bookstore-servicemesh-domain-authentication" />
+        <module name="bookstore-servicemesh-library-infrastructure" />
+        <module name="bookstore-servicemesh-domain-account" />
+        <module name="bookstore-servicemesh-domain-payment" />
+        <module name="bookstore-servicemesh-domain-warehouse" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bookstore-servicemesh-domain-account" options="-parameters" />
+      <module name="bookstore-servicemesh-domain-authentication" options="-parameters" />
+      <module name="bookstore-servicemesh-domain-frontend" options="-parameters" />
+      <module name="bookstore-servicemesh-domain-payment" options="-parameters" />
+      <module name="bookstore-servicemesh-domain-warehouse" options="-parameters" />
+      <module name="bookstore-servicemesh-library-infrastructure" options="-parameters" />
+      <module name="bookstore-servicemesh-library-testing" options="-parameters" />
+    </option>
+  </component>
+</project>
