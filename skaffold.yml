@@ -4,20 +4,20 @@ build:
   tagPolicy:
     sha256: {}
   artifacts:
-    - image: icyfenix/bookstore-istio-domain-warehouse
+    - image: houjiahao123/mystore-warehouse
       context: bookstore-servicemesh-domain-warehouse
-    - image: icyfenix/bookstore-istio-domain-authentication
+    - image: houjiahao123/mystore-authentication
       context: bookstore-servicemesh-domain-authentication
-    - image: icyfenix/bookstore-istio-domain-account
+    - image: houjiahao123/mystore-account
       context: bookstore-servicemesh-domain-account
-    - image: icyfenix/bookstore-istio-domain-payment
+    - image: houjiahao123/mystore-payment
       context: bookstore-servicemesh-domain-payment
-    - image: icyfenix/bookstore-istio-domain-frontend
+    - image: houjiahao123/mystore-frontend
       context: bookstore-servicemesh-domain-frontend
 deploy:
   kubectl:
     manifests:
-      - ./bookstore-kubernetes-manifests/bookstore-namespaces.yaml
-      - ./bookstore-kubernetes-manifests/*.yml
-      - ./bookstore-istio-manifests/*.yaml
+      - ./mystore-kubernetes-manifests/mystore-namespaces.yaml
+      - ./mystore-kubernetes-manifests/*.yml
+      - ./mystore-istio-manifests/*.yaml
   statusCheckDeadlineSeconds: 20000
