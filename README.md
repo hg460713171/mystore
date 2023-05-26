@@ -107,8 +107,9 @@ https://istio.io/latest/zh/docs/setup/install/istioctl/
 
 建议跟着官网走一遍quickstart（入门），想要深入了解就跟着官网走一遍task（任务）,文档写的非常好，值得仔细研读。
 
-## **架构总览**
+## **架构总览以及项目预览**
 ![11.png](static%2F11.png)
+https://7ro3888383.zicp.fun/
 ## **开发以及上线**
 ### **开发环境以及开发工具的搭建**
 
