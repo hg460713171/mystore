@@ -647,7 +647,6 @@ metadata:
 spec:
   jwtRules:
     - issuer: "icyfenix@gmail.com"
-      # Envoy默认只认“Bearer”作为JWT前缀，之前其他地方用的都是小写，这里专门兼容一下
       fromHeaders:
         - name: Authorization
           prefix: "bearer "
